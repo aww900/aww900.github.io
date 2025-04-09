@@ -1,0 +1,115 @@
+html{height:100%}
+
+*{margin:0;padding:0;}
+
+body{font:normal 0.95em 'trebuchet ms',arial,sans-serif;background: #F0EFE2; color: #535454;}
+
+img{border:0 ; padding: 0 0 0 0;}
+
+h1, h2, h3, h4, h5, h6 {font:normal 175% 'century gothic', arial, sans-serif;
+    color: #43423F;margin: 0 0 15px 0;padding: 15px 0 5px 0;}
+
+h2{font:normal 165% 'century gothic', arial, sans-serif;color:#1293EE;}
+
+h3{font:normal 135% 'century gothic', arial, sans-serif;}
+
+h4, h5, h6{margin: 0;padding: 0 0 5px 0;font:normal 120% arial, sans-serif;color:#1293EE;}
+
+h5, h6{font:italic 95% arial, sans-serif;padding: 0 0 15px 0;color: #000;}
+
+h6{color: #362C20;}
+
+figcaption { display: table-caption; caption-side: bottom ; }
+
+figure{display:table;border: 1px solid #000; border-bottom: 0px;margin: 0 0 0 0;padding: 10px 10px 10px 10px;}
+
+/*figure{display:none;}*/
+
+figcaption{font:normal 0.8em 'trebuchet ms', arial, sans-serif;text-align:justify;text-justify:auto;
+	   color: #000;margin: 0 0px 0 0px;padding: 0px 10px 10px 10px;border:1px solid #000;border-top: 0;}
+
+a, a:hover{outline:none;text-decoration:underline;color: #F05A00;}
+
+a:hover{text-decoration:none;}
+
+ul{margin:2px 0 22px 17px;}
+
+.left{float:left;width:auto;margin-right:10px;}
+
+.right{float:right;width:auto;margin-left:10px;}
+
+.sidebar{float:right;width:190px;padding: 0 15px 20px 15px;}
+
+.sidebar ul{width: 178px;padding: 4px 0 0 0; margin: 4px 0 30px 0;}
+
+.sidebar li{list-style: none; padding: 0 0 7px 0;}
+
+.sidebar li a, .sidebar li a:hover{padding: 0 0 0 40px;display:block;background:transparent url(link.png) no-repeat left center;} 
+
+.sidebar li a.selected{color: #444;text-decoration:none;} 
+
+#main, #logo, #menubar, #site_content, #footer{margin-left:auto;margin-right:auto;}
+
+#header{background: #F79F00;height:240px;}
+
+#logo{width:825px;position:relative;height:168px;background: #8B0073 url(logo.png) no-repeat;}
+
+#logo #logo_text{position:absolute;top:20px;left:0;}
+
+#logo h1, #logo h2{font:normal 300% 'century gothic', arial, sans-serif;
+    border-bottom:0;text-transform:none;margin:0;}
+
+#logo_text h1, #logo_text h1 a, #logo_text h1 a:hover{padding: 22px 0 0 0;
+    color: #FFF;letter-spacing:0.1em;text-decoration:none;}
+
+#logo_text h1 a .logo_colour{color: #F05A00;}
+
+#logo_text h2{font-size:100%;padding: 4px 0 0 0;color: #FFF;}
+
+#menubar{width:877px;height:72px;padding:0;background: #5B2660 url(menu.png) repeat-x;}
+
+ul#menu {list-style-type: none;letter-spacing:0.1em;
+    font: normal 100% 'lucida sans unicode',arial, sans-serif;
+    text-transform:uppercase;text-decoration:none;margin:0;padding:0;overflow:hidden;}
+
+p{padding: 0 0 20px 0;line-height:1.7em;}
+
+#site_content{width: 837px;overflow:hidden;margin: 0 auto 0 auto;
+padding: 20px 24px 20px 37px;background: #FFF url(content.png) repeat-y;} 
+
+#content{text-align: left;width: 595px;padding: 0;}
+
+#content ul{margin: 2px 0 22px 0px;}
+
+#content ul li{list-style-type: none;background: url(bullet.png) no-repeat;margin: 0 0 6px 0;padding: 0 0 4px 25px;line-height: 1.5em;}
+
+ul#menu li {float:left;}
+
+ul#menu li a, ul#menu .dropbtn {display: inline-block;color:white;text-align:center;height:37px;
+    padding: 29px 26px 6px 26px;text-decoration: none;}
+
+ul#menu li a:hover, ul#menu .dropbtn2, ul#menu .dropdown:hover .dropbtn, ul#menu .selected{color: #FFF; background: url(menu_select.png) repeat-x;}
+
+ul#menu li.dropdown {display:inline-block;}
+
+ul#menu .dropdown-content {display:none;position:absolute;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index:1;}
+
+.item1 {background:linear-gradient(#f79303,#f77701);}
+.item2 {background:linear-gradient(#f79303,#f77701);}
+
+ul#menu .dropdown-content a {color:white;height:37px;padding: 29px 26px 6px 26px;
+    text-decoration:none;display:block;text-align:left;}
+
+ul#menu .dropdown-content a:hover {background: url(menu_select.png) repeat-x;}
+
+ul#menu .dropdown:hover .dropdown-content {display:block;}
+
+
+#footer{width: 878px;font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  height: 33px;padding: 24px 0 5px 0;text-align: center;background: #29425E url(footer.png) repeat-x;
+  color: #FFF;text-transform: uppercase;letter-spacing: 0.1em;}
+
+#footer a{color: #FFF;text-decoration: none;}
+
+#footer a:hover{color: #FFF;text-decoration: underline;}
+
