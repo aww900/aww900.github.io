@@ -2,7 +2,35 @@
 <html lang="en">
   <head>
     <title>The Road to Kadesh</title>
-<link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+        <script> 
+        function clearForm() { 
+            document.getElementById("contact-form").reset(); 
+        } 
+	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "dEFRfeqpIfZ-WoONo",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('default_service', 'template_v2144t1', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
 </head>
 <body>
 <div id="main">  
@@ -44,8 +72,30 @@
     <p>Nothing yet.</p>
  </div>
 <h1>Contact Me Here</h1>
+  <p>If you have any comments or questions, please use the form below. Note that I will not use
+    your email address for any purpose other than to reply to your message, and will never pass
+  it on to any third party.</p>
 <div id="content">
-  <p>At the moment this page does not work. Once I figure out more about Javascript it will.</p>
+    <form id="contact-form" onsubmit="clearForm(); return false;">
+        <p><label>Your name:</label>
+        <input type="text" name="name" required></p>
+        <p><label>Your email address:</label>
+        <input type="email" name="email" required></p>
+         <p><label>Your message:</label>
+        <textarea rows="8" cols="70" name="message" required></textarea></p>
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+</div>
+ <div id="content_footer"></div>
+    <div id="footer">
+      <a href="contact.html">Return to the Top of the Page</a>
+    </div>
+</div>
+</body>
+</html>
+
+ <!--  <p>At the moment this page does not work. Once I figure out more about Javascript it will.</p>
 <form action="#" method="post">
     <div class="form_settings">
       <p><span>Your Name: </span><input class="contact" type="text" name="your_name" value="" /></p>
@@ -63,4 +113,4 @@
     </div>
 </div>
 </body>
-</html>
+</html>-->
