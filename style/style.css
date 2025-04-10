@@ -19,11 +19,11 @@ h5, h6{font:italic 95% arial, sans-serif;padding: 0 0 15px 0;color: #000;}
 
 h6{color: #362C20;}
 
+label{color: #1293EE;}
+
 figcaption { display: table-caption; caption-side: bottom ; }
 
 figure{display:table;border: 1px solid #000; border-bottom: 0px;margin: 0 0 0 0;padding: 10px 10px 10px 10px;}
-
-/*figure{display:none;}*/
 
 figcaption{font:normal 0.8em 'trebuchet ms', arial, sans-serif;text-align:justify;text-justify:auto;
 	   color: #000;margin: 0 0px 0 0px;padding: 0px 10px 10px 10px;border:1px solid #000;border-top: 0;}
@@ -103,7 +103,6 @@ ul#menu .dropdown-content a {color:white;height:37px;padding: 29px 26px 6px 26px
 ul#menu .dropdown-content a:hover {background: url(menu_select.png) repeat-x;}
 
 ul#menu .dropdown:hover .dropdown-content {display:block;}
-
 
 #footer{width: 878px;font: normal 100% 'lucida sans unicode', arial, sans-serif;
   height: 33px;padding: 24px 0 5px 0;text-align: center;background: #29425E url(footer.png) repeat-x;
