@@ -22,8 +22,7 @@
                 event.preventDefault();
                  emailjs.sendForm('default_service', 'template_bhiax5w', this)
                     .then(() => {
-                        console.log('SUCCESS!');
-                    }, (error) => {
+                        console.log('SUCCESS!');document.getElementById("contact-form").reset();}, (error) => {
                         console.log('FAILED...', error);
                     });
             });
