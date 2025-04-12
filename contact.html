@@ -3,31 +3,46 @@
   <head>
     <title>The Road to Kadesh</title>
     <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
-        <script> 
-        function clearForm() { 
-            document.getElementById("contact-form").reset(); 
-        } 
-	</script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
+
+    <script>function clearMessage() {
+    let state = document.getElementById("acknowledgement");
+    state.style.display = "none";}
+    </script>
+
+    <script> function clearForm() {document.getElementById("contform").reset();clearMessage()}</script>
+
+    <script>function switchMessage() {
+    let state = document.getElementById("acknowledgement");
+    if (state.style.display == "block") { 
+	state.style.display = "none";
+    } else {state.style.display = "block";}}
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
         (function() {
              emailjs.init({
               publicKey: "5DdEZmYqj-syqwxj6",
             });
         })();
     </script>
-    <script type="text/javascript">
+    <script>
         window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
+            document.getElementById('contform').addEventListener('submit', function(event) {
                 event.preventDefault();
                  emailjs.sendForm('default_service', 'template_bhiax5w', this)
                     .then(() => {
-                        console.log('SUCCESS!');document.getElementById("contact-form").reset();}, (error) => {
+                        console.log('SUCCESS!');document.getElementById("contform").reset();switchMessage();}, (error) => {
                         console.log('FAILED...', error);
                     });
             });
         }
     </script>
+    <style>
+      #acknowledgement {
+      display: none;}
+    </style>
 </head>
 <body>
 <div id="main">  
@@ -73,7 +88,7 @@
     your email address for any purpose other than to reply to your message, and I will never pass
   it on to any third party.</p>
 <div id="content">
-    <form id="contact-form"><!-- onsubmit="clearForm(); return false;">-->
+    <form id="contform"><!-- onsubmit="clearForm(); return false;">-->
         <p><label>Your name:</label>
         <input type="text" name="name" required></p>
         <p><label>Your email address:</label>
@@ -82,8 +97,12 @@
         <textarea rows="8" cols="70" name="message" required></textarea></p>
         <input type="submit" value="Send Message">
     </form>
-</div>
-</div>
+    <input type="button" value="Clear All" onclick="clearForm()"/>
+    </div>
+    <div id="acknowledgement">
+    <p>Message Sent. Thank you.</p>
+    </div>
+    </div>
  <div id="content_footer"></div>
     <div id="footer">
       <a href="contact.html">Return to the Top of the Page</a>
@@ -91,23 +110,3 @@
 </div>
 </body>
 </html>
-
- <!--  <p>At the moment this page does not work. Once I figure out more about Javascript it will.</p>
-<form action="#" method="post">
-    <div class="form_settings">
-      <p><span>Your Name: </span><input class="contact" type="text" name="your_name" value="" /></p>
-      <p><span>Your Email Address: </span><input class="contact" type="text" name="your_email" value="" /></p>
-      <p>Leave your message in the box below, then click "Send".</p>
-      <p><textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea></p>
-      <p style="padding-top: 15px"><span>&nbsp;</span><button class="submit" type="submit" name="contact_submitted" value="submit">Send</button></p>
-    </div>
-  </form>
-</div>
-</div>
- <div id="content_footer"></div>
-    <div id="footer">
-      <a href="contact.html">Return to the Top of the Page</a>
-    </div>
-</div>
-</body>
-</html>-->
