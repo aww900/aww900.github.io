@@ -31,19 +31,13 @@
         window.onload = function() {
             document.getElementById('contform').addEventListener('submit', function(event) {
                 event.preventDefault();
-                 emailjs.sendForm('default_service', 'template_bhiax5w', this)
+                 emailjs.sendForm('default_service','template_bhiax5w', this)
                     .then(() => {
-                        console.log('SUCCESS!');document.getElementById("contform").reset();switchMessage();}, (error) => {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
+        console.log('SUCCESS!');document.getElementById("contform").reset();switchMessage();},
+	(error) => {console.log('FAILED...', error);
+        });});}
     </script>
-    <style>
-      #acknowledgement {
-      display: none;}
-    </style>
-</head>
+ </head>
 <body>
 <div id="main">  
 <div id="header">
@@ -83,7 +77,7 @@
     <h3>What's changed since last time</h3>
     <p>Nothing yet.</p>
  </div>
-<h1>Contact Me Here</h1>
+<h1>Contact Me</h1>
   <p>If you have any comments or questions, please use the form below. Note that I will not use
     your email address for any purpose other than to reply to your message, and I will never pass
   it on to any third party.</p>
