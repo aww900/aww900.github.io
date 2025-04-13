@@ -19,7 +19,7 @@ h5, h6{font:italic 95% arial, sans-serif;padding: 0 0 15px 0;color: #000;}
 
 h6{color: #362C20;}
 
-label{color: #1293EE;}
+label{font: normal 145% 'century gothic', arial, sans-serif; color: #1293EE;}
 
 figcaption { display: table-caption; caption-side: bottom ; }
 
@@ -111,4 +111,7 @@ ul#menu .dropdown:hover .dropdown-content {display:block;}
 #footer a{color: #FFF;text-decoration: none;}
 
 #footer a:hover{color: #FFF;text-decoration: underline;}
+
+#acknowledgement {display: none;}
+
 
