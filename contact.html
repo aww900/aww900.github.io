@@ -83,16 +83,16 @@
   it on to any third party.</p>
 <div id="content">
     <form id="contform"><!-- onsubmit="clearForm(); return false;">-->
-        <p><label>Your name:</label>
+        <p><label>Your name</label>
         <input type="text" name="name" required></p>
-        <p><label>Your email address:</label>
+        <p><label>Your email address</label>
         <input type="email" name="email" required></p>
-         <p><label>Your message:</label>
+         <p><label>Your message</label>
         <textarea rows="8" cols="70" name="message" required></textarea></p>
-        <input type="submit" value="Send Message">
+        <input class="btn" type="submit" value="Send Message">
+        <input class="btn" type="button" value="Clear All" onclick="clearForm()"/>
     </form>
-    <input type="button" value="Clear All" onclick="clearForm()"/>
-    </div>
+</div>
     <div id="acknowledgement">
     <p>Message Sent. Thank you.</p>
     </div>
