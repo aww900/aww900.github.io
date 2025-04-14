@@ -114,4 +114,6 @@ ul#menu .dropdown:hover .dropdown-content {display:block;}
 
 #acknowledgement {display: none;}
 
-
+.btn{background-color: #1293EE;  border: 1px solid black;
+  color: white;  padding: 12px 24px;  text-align: center;  text-decoration: none;
+  display: inline-block;  font-size: 16px;  border-radius: 8px;margin : 10px;}
