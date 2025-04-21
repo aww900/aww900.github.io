@@ -52,7 +52,7 @@ ul{margin:2px 0 22px 17px;}
 
 #header{background: #F79F00;height:240px;}
 
-#logo{width:825px;position:relative;height:168px;background: #8B0073 url(logo.png) no-repeat;}
+#logo{width:825px;position:relative;height:168px;background: #000 url(logo.png) no-repeat;}
 
 #logo #logo_text{position:absolute;top:20px;left:0;}
 
