@@ -66,7 +66,7 @@ ul{margin:2px 0 22px 17px;}
 
 #logo_text h2{font-size:100%;padding: 4px 0 0 0;color: #FFF;}
 
-#menubar{width:877px;height:72px;padding:0;background: #5B2660 url(menu.png) repeat-x;}
+#menubar{width:877px;height:72px;padding:0;background: #000 url(menu.png) repeat-x;}
 
 ul#menu {list-style-type: none;letter-spacing:0.1em;
     font: normal 100% 'lucida sans unicode',arial, sans-serif;
