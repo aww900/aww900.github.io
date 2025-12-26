@@ -38,7 +38,7 @@ ul{margin:2px 0 22px 17px;}
 
 .right{float:right;width:auto;margin-left:10px;}
 
-.sidebar{font-size:90%;float:right;width:190px;padding: 0 15px 20px 15px;}
+.sidebar{float:right;width:190px;padding: 0 15px 20px 15px;}
 
 .sidebar ul{width: 178px;padding: 4px 0 0 0; margin: 4px 0 30px 0;}
 
@@ -96,7 +96,6 @@ ul#menu .dropdown-content {display:none;position:absolute;box-shadow: 0px 8px 16
 
 .item1 {background:linear-gradient(#f79303,#f77701);}
 .item2 {background:linear-gradient(#f79303,#f77701);}
-.item3 {background:linear-gradient(#f79303,#f77701);}
 
 ul#menu .dropdown-content a {color:white;height:37px;padding: 29px 26px 6px 26px;
     text-decoration:none;display:block;text-align:left;}
