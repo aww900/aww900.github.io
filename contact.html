@@ -9,7 +9,7 @@
     state.style.display = "none";}
     </script>
 
-    <script> function clearForm() {document.getElementById("contform").reset();clearMessage()}</script>
+    <script> function clearForm() {document.getElementById("contform").reset();clearMessage();}</script>
 
     <script>function switchMessage() {
     let state = document.getElementById("acknowledgement");
@@ -35,7 +35,7 @@
                     .then(() => {
         console.log('SUCCESS!');document.getElementById("contform").reset();switchMessage();},
 	(error) => {console.log('FAILED...', error);
-        });});}
+		   });});};
     </script>
  </head>
 <body>
